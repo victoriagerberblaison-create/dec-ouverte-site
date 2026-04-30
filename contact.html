@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEC Ouverte — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-card {
+      margin-top: 3rem;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+      padding: 2.5rem;
+      max-width: 480px;
+    }
+
+    .contact-card p {
+      margin-bottom: 1.75rem;
+      font-size: 0.95rem;
+    }
+
+    .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.8rem 1.5rem;
+      border: 1px solid rgba(139,74,43,0.25);
+      border-radius: 8px;
+      background: rgba(139,74,43,0.04);
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+    }
+
+    .email-link:hover {
+      background: rgba(139,74,43,0.08);
+      border-color: rgba(139,74,43,0.4);
+      transform: translateY(-1px);
+    }
+
+    .email-link svg { width: 17px; height: 17px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">DEC <em>ouverte</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="dec.html">DEC</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="fade">
+      <p class="eyebrow">Contact</p>
+    </div>
+    <h1 class="fade">Une question ?<br><em>Écris-nous.</em></h1>
+    <div class="divider fade-2"></div>
+
+    <div class="contact-card fade-3">
+      <p style="line-height: 1.9; margin-bottom: 1.75rem;">
+        Pour toute question sur le projet, suggestion d'amélioration ou retour sur les applications, <br>nous vous invitons à envoyer un message. <br> Toutes les demandes sont lues.
+      </p>
+      <a href="mailto:contact@dec-ouverte.fr" class="email-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        contact@dec-ouverte.fr
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 DEC-Ouverte</span>
+  </footer>
+
+</body>
+</html>
